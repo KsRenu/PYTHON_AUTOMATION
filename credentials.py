@@ -1,2 +1,2 @@
-USERNAME='_renu_konda_'
-PASSWORD='seftsat.123sgjK'
+USERNAME='_renu_ks_'
+PASSWORD='renuSurya'
