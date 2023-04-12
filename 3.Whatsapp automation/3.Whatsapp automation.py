@@ -1,11 +1,11 @@
 from selenium import webdriver
-import time
+import time 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pyperclip
 from selenium.webdriver.common.keys import Keys
-browser=webdriver.Chrome(executable_path="C:\\Users\\Admin\\Downloads\\chromedriver_win32\\chromedriver")
+browser=webdriver.Chrome(executable_path="F:\\GitHub\\pythonAutomation\\chromedriver_win32\\chromedriver") 
 browser.maximize_window()
 browser.get('https://web.whatsapp.com/')
 with open('groups.txt','r',encoding='utf8') as f: 
