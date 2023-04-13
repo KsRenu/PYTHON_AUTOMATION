@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pyperclip
+#print(pyperclip.__version__)
 from selenium.webdriver.common.keys import Keys
 browser=webdriver.Chrome(executable_path="F:\\GitHub\\pythonAutomation\\chromedriver_win32\\chromedriver") 
 browser.maximize_window()
@@ -32,10 +33,10 @@ for group in groups :
     group_title=browser.find_element(By.XPATH,group_xpath)
     group_title.click()
     time.sleep(1)
-    input_xpath='//div[@contenteditable="true"][@data-tab="9"]'
+    input_xpath='//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p'
     #input_box=browser.find_element_by_xpath(input_xpath)
     input_box=browser.find_element(By.XPATH,input_xpath)
     pyperclip.copy(msg)
     input_box.send_keys( Keys.CONTROL + "v") 
     input_box.send_keys(Keys.ENTER)
-    time.sleep(2)
+    time.sleep(2) 
